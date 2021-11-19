@@ -13,9 +13,11 @@
     <div id="root">
         <div class="mail-list">
             <h1>Mails List</h1>
-            <ul>
-                <li></li>
-            </ul>
+            <ol>
+                <li v-for="element in mailsArray">
+                    {{ element }}
+                </li>
+            </ol>
         </div>
     </div>
 
