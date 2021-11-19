@@ -14,7 +14,9 @@
         <div class="mail-list">
             <h1>Mails List</h1>
             <ol>
-                <li v-for="element in mailsArray">
+                <li v-for="element in mailsArray"
+                    v-if="dataPrintOk"
+                >
                     {{ element }}
                 </li>
             </ol>
